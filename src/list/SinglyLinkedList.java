@@ -14,7 +14,7 @@ public class SinglyLinkedList<E> {
 
     public SinglyLinkedList(SinglyLinkedList<E> orig) {
         // Push last element first from orig
-        for(int i = orig.size() - 1; i > 0; i--) {
+        for(int i = orig.size() - 1; i + 1 > 0; i--) {
             insertFirst(orig.get(i));
         }
     }
